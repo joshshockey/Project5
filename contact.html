@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Week 3 Project-->
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">       
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="css/style.css" rel="stylesheet"> 	
+	<script src="js/email_list.js"></script>
+	
+	<title>Throat Honey Band Page</title>             
+    
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+        <div class="masthead clearfix">
+            <div class="inner">              
+              <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+                        </button>
+			<a class="navbar-brand" href="index.html">Throat Honey - Boise Skate Punk</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="info.html">Calculate</a></li> 
+				<li><a href="newsletter.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+                    </div>
+		</div>				
+               </nav>
+            </div> 
+		</div>
+		<div class="inner cover">
+			<h1 class="cover-heading">Contact us for more info or to book a show!</h1>
+			<main>						
+			<form id="email_form" name="email_form" action="thankyou.php" method="post">
+			<label for="email_address1">Email Address:</label>
+			<input type="text" id="email_address1" name="email_address1"><span>*</span><br>
+
+			<label for="email_address2">Confirm Email Address:</label>
+			<input type="text" id="email_address2" name="email_address2"><span>*</span><br><br>		
+			
+			<label for="first_name">First Name:</label>
+			<input type="text" id="first_name" name="first_name"><span>*</span><br>
+			
+			<label for="comment_box">Comments:</label>
+			<textarea rows="4" cols="50" id="comment" name="comment" form="email_form">
+			</textarea>
+
+			<label>&nbsp;</label>
+			<input type="button" id="join_list" value="Confirm">
+			</form>
+			</main>
+		</div>				
+		
+		<div class="footer">
+			<div class="inner">
+				<script src="js/date.js"></script>
+			</div>
+		</div>	 				   	
+	  </div>
+	</div>		
+	<!-- Bootstrap -->	
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+	  

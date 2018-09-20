@@ -1,0 +1,284 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+/*table {
+        
+	border-collapse: collapse;
+	border-spacing: 0; 
+}*/
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px dashed black;
+    padding: .2em .5em .2em .5em;
+    vertical-align: top;
+    text-align: left;
+}
+/* end reset browser styles */
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+ 
+html,
+body { 
+  height: 100%;
+  background-color: #fff;
+  
+}
+body { 
+  color: darkorange; 
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cover-heading {
+	font-size: 30px;
+	color: orange;
+	padding-bottom: 35px;
+}
+.container {
+	padding: 40px 60px;
+	margin: 10px;
+}
+
+/* Padding for spacing */
+.inner {    
+  padding: 40px;
+}
+
+
+/*
+ * Header
+ */
+.brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: orange;
+}
+/* Style rules for navbar */
+.navbar {
+	font-weight: 600;
+	color: orange;
+	background-color: rgb(55,55,55);
+	position: fixed;	
+	opacity: .9;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 10px;
+	z-index: 100;	
+}
+.navbar-inverse .navbar-brand {
+	color: orange;
+}
+
+.navbar {	
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.navbar .button {
+	width: 48%;
+	margin: 2px 8px;
+}
+.navbar .button {
+	background-color: rgba(255,255,255,.5);
+}
+.navbar .button:hover {
+	background-color: rgba(255,0,0,.3);
+}
+
+/* Style rules for email list, mpg calculator*/
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 1em 2em 1em;
+    width: 600px;
+    border: 3px solid rgb(55,55,55);
+}
+h1 {
+	color:rgb(55,55,55) ;
+}
+label {
+	float: left;
+    width: 9em;
+    text-align: right;
+	padding-bottom: .5em;
+	
+}
+input {
+    margin-left: 1em;
+	margin-right: 1em;
+    margin-bottom: .5em;
+    width: 11em;
+}
+
+/* Style rules for FAQ form */
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    background: url(../images/plus.png) no-repeat left center;
+}
+h2.minus {
+    background: url(../images/minus.png) no-repeat left center;
+}
+a {
+    color: black;
+    text-decoration: none; 
+}
+a:focus, a:hover {
+	color: orange;
+}
+main div {
+    display: none;
+}
+main div.open {
+    display: block;
+}
+p {
+    padding-bottom: .25em;
+    padding-left: 25px;
+}
+main ul {
+	display: none;
+}
+
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .navbar {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 10px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.footer {	
+  color: #333;
+  border: 10px solid;
+  border-color: rgb(55,55,55);
+  
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .footer {
+    position: fixed;
+	padding: 20px;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .footer,
+  .cover-container {
+    width: 100%; 
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .footer,
+  .cover-container {
+    width: 100%;	
+  }
+  .container {
+	  margin: 10px;
+  }
+
+}
