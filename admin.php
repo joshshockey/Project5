@@ -1,5 +1,8 @@
+<!--***************************
+    Admin page with updates for Project 5
+    ***************************-->
 <?php
-require_once('database.php');
+require_once('database.php'); 
 
 // Get employee ID
 if (!isset($employeeID)) {
@@ -41,7 +44,7 @@ $statement3->closeCursor();
 
 
 <!DOCTYPE html>
-<!--Week 3 Project-->
+<!--Week 5 Project-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -70,6 +73,7 @@ $statement3->closeCursor();
                     <li><a href="newsletter.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="admin.php">Admin</a></li>
 	</div>
 	</div>
     </nav>

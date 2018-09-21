@@ -1,4 +1,5 @@
-<?php       
+<?php   
+
     $emailAddress = filter_input(INPUT_POST, 'email_address1');  
    
             $dsn = 'mysql:host=localhost;dbname=contact_newsletter';
@@ -10,8 +11,7 @@
 
             } catch (PDOException $e) {
                 $error_message = $e->getMessage();
-                /* include('database_error.php'); */
-                echo "DB Error: " . $error_message; 
+                include('database_error.php');                  
                 exit();
             }
     
@@ -27,7 +27,7 @@
         
 ?>
 <!DOCTYPE html>
-<!--Week 3 Project-->
+<!--Week 5 Project-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -55,6 +55,7 @@
                     <li><a href="newsletter.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="admin.php">Admin</a></li>
 	</div>
 	</div>
     </nav>
